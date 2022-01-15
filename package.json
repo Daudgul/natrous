@@ -1,0 +1,18 @@
+{
+  "name": "natrous",
+  "version": "1.0.0",
+  "description": "Landing page for natrous",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/MYcat.css -w"
+  },
+  "author": "Daud",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "Landing page for natrous"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
