@@ -15,6 +15,28 @@
     
 </head>
 <body>
+
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span> About Natrous</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="logo-box">
             <img src="IMG/favicon.png" alt="logo" class="logo">
@@ -174,7 +196,7 @@
                                            <p class="card__price-only">Only</p>
                                            <p class="card__price-value">$297</p>
                                        </div>
-                                       <a href="#" class="btn btn-w">Book now</a>
+                                       <a href="#popup" class="btn btn-w">Book now</a>
                                  </div>
                             </div>
                          </div>
@@ -213,7 +235,7 @@
                                            <p class="card__price-only">Only</p>
                                            <p class="card__price-value">$497</p>
                                        </div>
-                                       <a href="#" class="btn btn-w">Book now</a>
+                                       <a href="#popup" class="btn btn-w">Book now</a>
                                  </div>
                             </div>
                          </div>
@@ -250,7 +272,7 @@
                                       <p class="card__price-only">Only</p>
                                       <p class="card__price-value">$897</p>
                                   </div>
-                                  <a href="#" class="btn btn-w">Book now</a>
+                                  <a href="#popup" class="btn btn-w">Book now</a>
                             </div>
                        </div>
                     </div>
@@ -286,7 +308,7 @@
                         <figcaption class="story__caption">Mary Smith</figcaption>
                      </figure>
                      <div class="story__text">
-                         <h3 class="heading-tertiary"> I had the best week ever with my family</h3>
+                         <h3 class="heading-tertiary u-margin-bottom-small"> I had the best week ever with my family</h3>
                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
                               ab voluptatum facilis explicabo sequi fugiat repellat reiciendis quo,
                                deleniti libero amet accusantium assumenda nulla mollitia laboriosam ad 
@@ -305,7 +327,7 @@
                        <figcaption class="story__caption">Jack Wilson</figcaption>
                     </figure>
                     <div class="story__text">
-                        <h3 class="heading-tertiary"> WoW! my life completely different now</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small"> WoW! my life completely different now</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum,
                              ab voluptatum facilis explicabo sequi fugiat repellat reiciendis quo,
                               deleniti libero amet accusantium assumenda nulla mollitia laboriosam ad 
@@ -342,7 +364,7 @@
                                    <input type="email" class="form__input" placeholder="email " required>
                                    <label for="name" class="form__label">Email address</label>
                                </div>
-                               <div class="form__group u-margin-bottom-medium">
+                               <div class="form__group">
                                    <div class="form__radio-group">
                                        <input type="radio" class="form__radio-input" id="small" name="size">
                                        <label for="small" class="form__radio-label">
@@ -400,6 +422,35 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+               <img src="IMG/nat-8.jpg" alt="Tour photo" class="popup__img">
+               <img src="IMG/nat-9.jpg" alt="Tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read tis tourm before booking</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Vitae nihil vero reprehenderit 
+                    pariatur praesentium sunt culpa repellendus obcaecati, 
+                    sint vel autem dolore ipsam, impedit commodi, consectetur a sed harum amet! Lorem ipsum dolor, 
+                    am quidem nisi. Maxime rem quos dolor quia assumenda ratione fuga rerum minus fugit quibusdam 
+                    amet accusantium voluptatum omnis, sunt et voluptates? Dolor dignissimos 
+                     vel, laborum dolores reprehenderit mollitia voluptas est. impedit commodi, consectetur a sed harum amet! Lorem ipsum dolor, 
+                     am quidem nisi. Maxime rem quos dolor quia assumenda ratione fuga rerum minus fugit quibusdam 
+                     amet accusantium voluptatum omnis, sunt et voluptates? Dolor dignissimos 
+                      vel, laborum dolores reprehenderit mollitia voluptas est.
+                    
+                </p>
+                <a href="#" class="btn btn--green">Book now</a>
+
+            </div>
+        </div>
+    </div>
         <!--
     <section class="grid test">
         <div class="row">
