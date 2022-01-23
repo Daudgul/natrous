@@ -39,7 +39,7 @@
     </div>
     <header class="header">
         <div class="logo-box">
-            <img src="IMG/favicon.png" alt="logo" class="logo">
+            <img src="IMG/logo-white.png" alt="logo" class="logo">
         </div>
 
         <div class="text-box"> 
@@ -90,9 +90,30 @@
 
                   <div class="col-1-of-2">
                       <div class="composition">
-                          <img src="IMG/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+
+                        <img srcset="IMG/nat-1.jpg 300w, IMG/nat-1-large.jpg 1000w"
+                             sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vh, 300px"
+                             alt="photo 1"
+                             class="composition__photo composition__photo--p1"
+                             src="IMG/nat-1-large.jpg" >
+
+                        <img srcset="IMG/nat-2.jpg 300w, IMG/nat-2-large.jpg 1000w"
+                             sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vh, 300px"
+                             alt="photo 2"
+                             class="composition__photo composition__photo--p2"
+                             src="IMG/nat-2-large.jpg" >
+
+                        <img srcset="IMG/nat-3.jpg 300w, IMG/nat-3-large.jpg 1000w"
+                             sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vh, 300px"
+                             alt="photo 3"
+                             class="composition__photo composition__photo--p3"
+                             src="IMG/nat-3-large.jpg" >
+
+                          <!--
+                              <img src="IMG/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1"> 
                           <img src="IMG/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                          <img src="IMG/nat-3-large.jpg" alt="Photo 3 " class="composition__photo composition__photo--p3">
+                          <img src="IMG/nat-3-large.jpg" alt="Photo 3 " class="composition__photo composition__photo--p3"> 
+                          -->
                         </div>
                   </div>
                   
@@ -188,7 +209,7 @@
                                      </ul>
                                  </div>
 
-                                 front
+                                
                              </div>
                              <div class="card__side card__side--back card__side--back-1">
                                  <div class="card__cta">
@@ -227,7 +248,7 @@
                                      </ul>
                                  </div>
 
-                                 front
+                                 
                              </div>
                              <div class="card__side card__side--back card__side--back-2">
                                  <div class="card__cta">
@@ -264,7 +285,7 @@
                                 </ul>
                             </div>
 
-                            front
+                            
                         </div>
                         <div class="card__side card__side--back card__side--back-3">
                             <div class="card__cta">
@@ -397,7 +418,13 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="IMG/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            <picture class="footer__logo">
+                <source srcset="IMG/logo-green-small-1x.png 1x, IMG/logo-green-small-2x.png 2x" 
+                        media="(max-width: 37.5em)">
+                <img srcset="IMG/logo-green-1x.png 1x, IMG/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+
+            </picture>
+            
             <div class="row">
                 <div class="col-1-of-2">
                     <div class="footer__navigation">

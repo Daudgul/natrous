@@ -58,11 +58,19 @@
 
 
 
+
+
+
     }
 
     &__left {
         width: 33.333333%;
         display: table-cell;
+
+        @include respond(tab-land) {
+            width: 0;
+            
+        }
 
 
     }
@@ -72,6 +80,15 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+
+        @include respond(tab-land) {
+            width: 100%;
+            background-image:linear-gradient(to right bottom, rgba($color-white, 0.8), rgba($color-grey-light-1, 0.8)), url(../IMG/nat-8.jpg) ;
+            background-size: cover;
+            overflow: hidden;
+            
+        }
 
     }
 
@@ -95,7 +112,7 @@
 
         -moz-hyphens: auto;
         -ms-hyphens: auto;
-        -weblit-hyphens: auto;
+        -webkit-hyphens: auto;
         hyphens: auto;
 
     }
